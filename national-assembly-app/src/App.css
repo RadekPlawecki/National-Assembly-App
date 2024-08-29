@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'LatoBlack';
+    src: local("Lato-Black"), url('./fonts/Lato-Black.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'LatoBlackItalic';
+    src: local("Lato-BlackItalic"), url('./fonts/Lato-BlackItalic.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'LatoBold';
+    src: local("Lato-Bold"), url('./fonts/Lato-Bold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'LatoBoldItalic';
+    src: local("Lato-BoldItalic"), url('./fonts/Lato-BoldItalic.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'LatoLight';
+    src: local("Lato-Light"), url('./fonts/Lato-Light.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'LatoLightItalic';
+    src: local("Lato-LightItalic"), url('./fonts/Lato-LightItalic.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'LatoRegular';
+    src: local("Lato-Regular"), url('./fonts/Lato-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'LatoThin';
+    src: local("Lato-Thin"), url('./fonts/Lato-Thin.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'LatoThinItalic';
+    src: local("Lato-ThinItalic"), url('./fonts/Lato-ThinItalic.ttf') format("truetype");
+}
