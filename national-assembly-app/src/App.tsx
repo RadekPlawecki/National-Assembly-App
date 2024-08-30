@@ -9,16 +9,18 @@ import AdminDashboard from './admin/admin-dashboard/AdminDashboard';
 
 function App() {
   return (
-    <BrowserRouter>
-      <I18nextProvider i18n={i18n}>
-            <ApiProvider>
-                <Routes>
-                    <Route path="/" element={<Navigate to="/dashboard" />} />
-                    <Route path="/dashboard" element={<AdminDashboard />} />
-                </Routes>
-            </ApiProvider>
-      </I18nextProvider>
-    </BrowserRouter>
+      <div className="App">
+          <BrowserRouter>
+              <I18nextProvider i18n={i18n}>
+                  <ApiProvider>
+                      <Routes>
+                          <Route path="/" element={<Navigate to="/dashboard" />} />
+                          <Route path="/dashboard" element={<AdminDashboard />} />
+                      </Routes>
+                  </ApiProvider>
+              </I18nextProvider>
+          </BrowserRouter>
+      </div>
   );
 }
 
