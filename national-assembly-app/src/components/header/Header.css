@@ -1,0 +1,54 @@
+.header {
+    grid-area: header;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1vh;
+    margin-top: 2vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    border-bottom: 1px solid #C5C5C5;
+    font-family: LatoBlack, serif;
+    font-size: 1vw;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.header #icon {
+    color: white;
+    width: 70%;
+    height: 70%;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    gap: 0.8vh;
+    padding-right: 1.5vw;
+    padding-left: 0.5vw;
+    height: 6vh;
+    width: auto;
+    white-space: nowrap;
+    font-family: LatoBold, serif;
+    font-size: 1vw;
+}
+
+.photo {
+    display: grid;
+    place-items: center;
+    height: 5vh;
+    margin-right: 1vh;
+    width: 100%;
+}
+
+.photo img {
+    width: 5vh;
+    height: 5vh;
+    object-fit: contain;
+}

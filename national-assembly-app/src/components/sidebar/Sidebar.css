@@ -1,23 +1,26 @@
-.sidebar {
-    height: 100vh;
-    width: 240px;
+#sidebar {
+    grid-area: sidebar;
+    height: 100%;
+    overflow-y: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
     font-family: LatoRegular, serif;
     background-color: #FFFFFF;
     border-right: 1px solid #C5C5C5;
-    padding: 10px;
+    padding: 1.25vh;
     position: relative;
 }
 
 .logo {
     display: grid;
     place-items: center;
-    height: 140px;
+    height: 7.3vw;
     width: 100%;
 }
 
 .logo img {
-    width: 140px;
-    height: 140px;
+    width: 7.3vw;
+    height: 7.3vw;
 }
 
 .sidebar-list {
@@ -30,14 +33,14 @@
 
 .sidebar-list .row {
     width: 100%;
-    height: 50px;
+    height: 7vh;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     font-family: LatoRegular, serif;
-    font-size: 16px;
+    font-size: 2vh;
     border-radius: 10px;
     margin-top: 10px;
 }
@@ -50,6 +53,12 @@
 .sidebar-list #active {
     background-color: #f6f6f6;
     font-family: LatoBold, serif;
+}
+
+.sidebar-responsive {
+    display: inline !important;
+    position: absolute;
+    z-index: 12 !important;
 }
 
 .row #icon {
@@ -69,4 +78,72 @@
     text-align: center;
     width: 90%;
     margin-bottom: 40px;
+}
+
+@media screen and (max-width: 992px) {
+    #sidebar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 50px;
+        overflow-x: auto;
+        background-color: #FFFFFF;
+        padding: 1.5vh;
+        border-top: 1px solid #C5C5C5;
+    }
+
+    .sidebar-list {
+        flex-grow: 1;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar-list .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 20%;
+        list-style-type: none;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+
+    .row #title {
+        display: none;
+    }
+
+    .row #icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 100%;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .version {
+        display: none;
+    }
 }

@@ -4,10 +4,12 @@ import { SidebarData } from './SidebarData';
 
 function Sidebar() {
     return (
-        <div className="sidebar">
+        <aside id="sidebar">
+        <div className="sidebar-title">
             <div className="logo">
                 <img src="/ESNstar_digital_full_colour_safezone.png" alt="Logo"/>
             </div>
+        </div>
             <ul className="sidebar-list">
                 {SidebarData.map((val, key) => {
                     return (<li key={key} className="row" id={window.location.pathname === val.link ? "active" : ""}
@@ -24,7 +26,7 @@ function Sidebar() {
                 })}
             </ul>
             <div className="version">National Assembly App <br/> v1.0.0</div>
-        </div>
+        </aside>
     );
 }
 
